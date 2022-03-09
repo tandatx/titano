@@ -1,0 +1,235 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="bg-dark">
+  <div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    <!-- sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 p-4 text-white sidebar" style="width: 280px;height: 100vh;">
+      <div class="btn-close btn-close-white btn-close-sidebar">
+      </div>
+      <div class="text-center">
+        <a href="/">
+          <img width="150" src="./images/logo.png"/>
+        </a>
+      </div>
+      <ul class="nav nav-pills flex-column mb-auto sidebar-menu">
+        <li>
+          <a href="index.html" class="nav-link" aria-current="page">
+            <img class="icon" width="18" src="./images/icons/dashboard.png">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="account.html" class="nav-link active">
+            <img class="icon" width="18" src="./images/icons/account.png">
+            Account
+          </a>
+        </li>
+        <li>
+          <a href="calculator.html" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/calculator.png">
+            Calculator
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/swap.png">
+            Swap
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/docs.png">
+            Docs
+          </a>
+        </li>
+      </ul>
+      
+      <div class="social">        
+        <ul class="social-list">
+          <li>
+            <a href="#"><img width="22" src="./images/icons/telegram.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/medium.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/twitter.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/reddit.png"/></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sidebar -->
+    <div class="flex-lg-1 h-screen overflow-y-lg-auto">
+      <!-- header -->
+      <header class="p-4">
+        <div>
+          <div class="d-flex flex-row-reverse">
+            <div class="mb-menu">
+              <a class="mb-menu-btn">
+                <img width="25" src="./images/icons/menu.png"/>
+              </a>
+            </div>
+            <div class="text-end">
+                <button class="btn btn-header dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="icon" width="20" height="20" src="./images/icons/info.png"/>
+                  <span>TITANO <small>$0.1645 USD</small></span>
+                </button>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Buy on Pancakeswap <img class="icon" width="13" height="13" src="./images/icons/resize.png"/></a></li>
+                  <li><a class="dropdown-item" href="#">Chart <img class="icon" width="13" height="13" src="./images/icons/resize.png"/></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ADD TOKEN TO WALLET</a></li>
+                </ul>              
+              <button type="button" class="btn btn-header">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- main -->
+      <main class="mt-4">
+        <div class="container account text-white">
+          <div class="row">
+            <div class="col-sm-12">
+              <!-- card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-inner">
+                    <h6>Total Earned</h6>
+                    <h2>$0.00</h2>
+                    <h6>0.00 TITANO (0.00% increase)</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+          </div>
+          <!-- end row -->
+          <div class="row">
+            <div class="col-sm-12">
+              <!-- card -->
+              <div class="card nested">
+                <div class="card-body">
+                  <div class="card-inner d-flex justify-content-between align-items-center">
+                    <div style="width: 100%;">
+                      <h6>APY</h6>
+                      <h4>102,483.58%</h4>
+                      <h6>Daily ROI 1.90%</h6>
+                    </div>
+                    <div class="card-nested">
+                      <h6>Your Balance</h6>
+                      <h4>
+                        <div class="lines">
+                          <div class="line pulse"></div>
+                        </div>
+                      </h4>
+                      <h6>0.00 TITANO</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+            <div class="col-sm-12">
+              <!-- card -->
+              <div class="card nested">
+                <div class="card-body">
+                  <div class="card-inner d-flex justify-content-between align-items-center">
+                    <div style="width: 100%;">
+                      <h6>Next Rebase:</h6>
+                      <h4>00:01:47</h4>
+                      <h6>Interest Coming In Your Wallet</h6>
+                    </div>
+                    <div class="card-nested">
+                      <h6>Your Earnings/Daily</h6>
+                      <h4>
+                        <div class="lines">
+                          <div class="line pulse"></div>
+                        </div>
+                      </h4>
+                      <h6>0.00 TITANO</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+          </div>
+          <!-- end row -->
+          <div class="row">
+            <div class="col-sm-12">
+              <!-- card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-inner">
+                    <div class="d-flex justify-content-between py-3">
+                      <h6>Current TITANO Price</h6>
+                      <h6 class="text-value">$0.1672 USD</h6>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                      <h6>Next Reward Amount</h6>
+                      <h6 class="text-value-2">TITANO</h6>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                      <h6>Next Reward Amount USD</h6>
+                      <h6 class="text-value">USD</h6>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                      <h6>Next Reward Yield</h6>
+                      <h6 class="text-value-2">0.03958%</h6>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                      <h6>ROI (5-Day Rate)</h6>
+                      <h6 class="text-value">9.87%</h6>
+                    </div>
+                    <div class="d-flex justify-content-between py-3">
+                      <h6>ROI (5-Day Rate) USD</h6>
+                      <h6 class="text-value">USD</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+            
+          </div>
+          <!-- end row -->
+        </div>
+      </main>
+      <!-- end main -->
+    </div>      
+  </div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

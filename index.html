@@ -1,0 +1,233 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="bg-dark">
+  <div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    <!-- sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 p-4 text-white sidebar" style="width: 280px;height: 100vh;">
+      <div class="btn-close btn-close-white btn-close-sidebar">
+      </div>
+      <div class="text-center">
+        <a href="/">
+          <img width="150" src="./images/logo.png"/>
+        </a>
+      </div>
+      <ul class="nav nav-pills flex-column mb-auto sidebar-menu">
+        <li>
+          <a href="index.html" class="nav-link active" aria-current="page">
+            <img class="icon" width="18" src="./images/icons/dashboard.png">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="account.html" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/account.png">
+            Account
+          </a>
+        </li>
+        <li>
+          <a href="calculator.html" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/calculator.png">
+            Calculator
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/swap.png">
+            Swap
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/docs.png">
+            Docs
+          </a>
+        </li>
+      </ul>
+      
+      <div class="social">        
+        <ul class="social-list">
+          <li>
+            <a href="#"><img width="22" src="./images/icons/telegram.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/medium.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/twitter.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/reddit.png"/></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sidebar -->
+    <div class="flex-lg-1 h-screen overflow-y-lg-auto">
+      <!-- header -->
+      <header class="p-4">
+        <div>
+          <div class="d-flex flex-row-reverse">
+            <div class="mb-menu">
+              <a class="mb-menu-btn">
+                <img width="25" src="./images/icons/menu.png"/>
+              </a>
+            </div>
+            <div class="text-end">
+                <button class="btn btn-header dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="icon" width="20" height="20" src="./images/icons/info.png"/>
+                  <span>TITANO <small>$0.1645 USD</small></span>
+                </button>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Buy on Pancakeswap <img class="icon" width="13" height="13" src="./images/icons/resize.png"/></a></li>
+                  <li><a class="dropdown-item" href="#">Chart <img class="icon" width="13" height="13" src="./images/icons/resize.png"/></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ADD TOKEN TO WALLET</a></li>
+                </ul>              
+              <button type="button" class="btn btn-header">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- main -->
+      <main class="mt-4">
+        <div class="container text-white">
+          <div class="row">
+            <div class="col-sm-12">
+              <!-- card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-4 text-center">
+                      <div class="card-inner">
+                        <h6>Market Cap</h6>
+                        <h5 class="mb-3">$150,288,518.28</h5>
+                        <h6>Circulating Supply</h6>
+                        <h5>909,202,939</h5>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                      <div class="card-inner">
+                        <h6>TITANO Price</h6>
+                        <h5 class="mb-3">$0.1653</h5>
+                        <h6>Backed Liquidity</h6>
+                        <h5>167.05%</h5>
+                      </div> 
+                    </div>
+                    <div class="col-sm-4 text-center">
+                      <div class="card-inner">
+                        <h6>Next Rebase</h6>
+                        <h5 class="mb-3">00:12:30</h5>
+                        <h6>Average TITANO Holding</h6>
+                        <h5>$3,178.69</h5>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+          </div>
+          <!-- end row -->
+          <div class="row">
+            <div class="col-sm-6">
+              <!-- card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-inner">
+                    <h6>TITANO Price</h6>
+                    <h4>$0.1652</h4>
+                    <div class="percent">
+                      +0.27%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+            <div class="col-sm-6">
+              <!-- card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-inner">
+                    <h6>Market Value Of Treasury Assets</h6>
+                    <h4>$10,284,257.57</h4>
+                    <div class="percent">
+                      +13.12%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+          </div>
+          <!-- end row -->
+          <div class="row">
+            <div class="col-sm-6">
+              <!-- card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-inner">
+                    <h6>BNB Liquidity Value</h6>
+                    <h4>$6,175,547.39</h4>
+                    <div class="percent">
+                      +1.58%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+            <div class="col-sm-6">
+              <!-- card -->
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-inner">
+                    <h6>Risk Free Value Market Value</h6>
+                    <h4>$5,632,322.92</h4>
+                    <div class="percent">
+                      +10.28%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+      </main>
+      <!-- end main -->
+    </div>      
+  </div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

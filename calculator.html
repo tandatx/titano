@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="bg-dark">
+  <div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+    <!-- sidebar -->
+    <div class="d-flex flex-column flex-shrink-0 p-4 text-white sidebar" style="width: 280px;height: 100vh;">
+      <div class="btn-close btn-close-white btn-close-sidebar">
+      </div>
+      <div class="text-center">
+        <a href="/">
+          <img width="150" src="./images/logo.png"/>
+        </a>
+      </div>
+      <ul class="nav nav-pills flex-column mb-auto sidebar-menu">
+        <li>
+          <a href="index.html" class="nav-link" aria-current="page">
+            <img class="icon" width="18" src="./images/icons/dashboard.png">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="account.html" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/account.png">
+            Account
+          </a>
+        </li>
+        <li>
+          <a href="calculator.html" class="nav-link active">
+            <img class="icon" width="18" src="./images/icons/calculator.png">
+            Calculator
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/swap.png">
+            Swap
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <img class="icon" width="18" src="./images/icons/docs.png">
+            Docs
+          </a>
+        </li>
+      </ul>
+      
+      <div class="social">        
+        <ul class="social-list">
+          <li>
+            <a href="#"><img width="22" src="./images/icons/telegram.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/medium.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/twitter.png"/></a>
+          </li>
+          <li>
+            <a href="#"><img width="22" src="./images/icons/reddit.png"/></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sidebar -->
+    <div class="flex-lg-1 h-screen overflow-y-lg-auto">
+      <!-- header -->
+      <header class="p-4">
+        <div>
+          <div class="d-flex flex-row-reverse">
+            <div class="mb-menu">
+              <a class="mb-menu-btn">
+                <img width="25" src="./images/icons/menu.png"/>
+              </a>
+            </div>
+            <div class="text-end">
+                <button class="btn btn-header dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="icon" width="20" height="20" src="./images/icons/info.png"/>
+                  <span>TITANO <small>$0.1645 USD</small></span>
+                </button>
+                <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Buy on Pancakeswap <img class="icon" width="13" height="13" src="./images/icons/resize.png"/></a></li>
+                  <li><a class="dropdown-item" href="#">Chart <img class="icon" width="13" height="13" src="./images/icons/resize.png"/></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ADD TOKEN TO WALLET</a></li>
+                </ul>              
+              <button type="button" class="btn btn-header">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- main -->
+      <main class="mt-4">
+        <div class="container calculator text-white">
+          <div class="row">
+            <div class="col-sm-12">
+              <!-- card -->
+              <div class="card calculator-card">
+                <div class="card-body">
+                  <div class="card-inner">
+                    <div class="calculator-card-header">
+                      <p class="calculator-card-header-title text-white">Calculator</p>
+                      <p class="calculator-card-header-subtitle text-white">Estimate your returns</p>
+                    </div>
+                    <div class="d-flex justify-content-around text-center">
+                      <div>
+                        <h5>TITANO Price</h5>
+                        <h4 class="text-white">$0.166795</h4>
+                      </div>
+                      <div>
+                        <h5>APY:</h5>
+                        <h4 class="text-white">102,483.58%</h4>
+                      </div>
+                      <div>
+                        <h5>Your TITANO Balance</h5>
+                        <h4 class="text-white">0.00 TITANO</h4>
+                      </div>
+                    </div>
+                    
+                    <div class="calculator-card-action-area mt-5">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h6 class="text-white">TITANO Amount</h6>
+                          <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="0" aria-label="0" aria-describedby="button-addon1">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Max</button>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <h6 class="text-white">APY (%)</h6>
+                          <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="102483.58" aria-label="102483.58" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Current</button>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <h6 class="text-white">TITANO price at purchase ($)</h6>
+                          <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="0.167036" aria-label="0.167036" aria-describedby="button-addon3">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon3">Current</button>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <h6 class="text-white">Future TITANO price ($)</h6>
+                          <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="0.167036" aria-label="0.167036" aria-describedby="button-addon4">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon4">Current</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calculator-days-slider-wrap py-3">
+                      <label for="daysSlider" class="form-label">
+                        <h6 class="text-white" id="daysSliderValue">0 days</h6>
+                      </label>
+                      <input type="range" value="30" min="1" max="365" class="form-range" id="daysSlider">
+                    </div>
+                    <div class="calculator-user-data">
+                      <div class="d-flex justify-content-between py-3">
+                        <h6>Your initial investment</h6>
+                        <h6 class="text-value-2">$0.00</h6>
+                      </div>
+                      <div class="d-flex justify-content-between py-3">
+                        <h6>Current wealth</h6>
+                        <h6 class="text-value-2">$0.00</h6>
+                      </div>
+                      <div class="d-flex justify-content-between py-3">
+                        <h6>TITANO rewards estimation</h6>
+                        <h6 class="text-value-2">$0.00 TITANO</h6>
+                      </div>
+                      <div class="d-flex justify-content-between py-3">
+                        <h6>Potential return</h6>
+                        <h6 class="text-value-2">$0.00</h6>
+                      </div>
+                      <div class="d-flex justify-content-between py-3">
+                        <h6>Potential number of Space Travels</h6>
+                        <h6 class="text-value-2">0</h6>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+          </div>
+        
+          <!-- end row -->
+        </div>
+      </main>
+      <!-- end main -->
+    </div>      
+  </div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
